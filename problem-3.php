@@ -23,7 +23,6 @@ return $n;
 }
 
 $n = 600851475143;
-settype($n, "float");
 echo factor($n);
 echo "<br>";
 ?>

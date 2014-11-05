@@ -10,7 +10,7 @@ $i=1;
 while ($i *$i <= $n)
 { 
 
-	//I found that using the %modulus can not handle numbers larger than 2^32. bcmod() provided the solution
+	// the %modulus operator can not handle numbers larger than 2^32. in this case bcmod() was the way to go
 	if (bcmod($n, $i) == 0)
 	{
 		$n = $n / $i;
